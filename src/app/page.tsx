@@ -3,8 +3,6 @@ import InterestForm from './components/InterestForm'
 import Logo from './logo.png'
 import Image from 'next/image'
 
-import '@mantine/core/styles.css'
-
 const SmokeScreen = () => {
   return (
     <main className="h-screen flex flex-col items-center justify-center w-full gap-2">
