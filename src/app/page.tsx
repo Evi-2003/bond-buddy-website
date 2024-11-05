@@ -1,18 +1,13 @@
 import CountWidget from "./components/CountWidget";
 import InterestForm from "./components/InterestForm";
-import Logo from "./logo.png";
+import Logo from "./logo.jpg";
 import Image from "next/image";
 
 const SmokeScreen = () => {
   return (
     <main className="min-h-screen py-6 flex flex-col items-center justify-center w-full gap-2">
-      <Image
-        src={Logo}
-        width={500}
-        height={200}
-        alt="Logo BondBuddy"
-        className="h-[165px] object-cover"
-      />
+      <Image src={Logo} width={300} height={200} alt="Logo BondBuddy" />
+
       <h1 className="text-4xl font-semibold">BondBuddy</h1>
       <h2 className="text-2xl font-medium text-balance text-center w-full">
         Klaar om eenzaamheid te bestrijden?
