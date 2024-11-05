@@ -1,13 +1,18 @@
-import Logo from '../logo.png'
-import Image from 'next/image'
+import Logo from "../logo.png";
+import Image from "next/image";
 
-import '@mantine/core/styles.css'
-import CountWidget from '../components/CountWidget'
+import CountWidget from "../components/CountWidget";
 
 const SmokeScreen = () => {
   return (
     <main className="h-screen flex flex-col items-center justify-center w-full">
-      <Image src={Logo} width={500} height={200} alt="Logo BondBuddy" className="h-[200px] object-cover" />
+      <Image
+        src={Logo}
+        width={500}
+        height={200}
+        alt="Logo BondBuddy"
+        className="h-[200px] object-cover"
+      />
       <h1 className="text-4xl font-semibold">Bedankt!</h1>
       <h2 className="text-2xl font-medium">Namens iedereen</h2>
 
@@ -17,7 +22,7 @@ const SmokeScreen = () => {
         <CountWidget count={2958765} title="Eenzaamheid tussen de 18-65" />
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default SmokeScreen
+export default SmokeScreen;
