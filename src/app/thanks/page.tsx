@@ -17,9 +17,21 @@ const SmokeScreen = () => {
       <h2 className="text-2xl font-medium">Namens iedereen</h2>
 
       <div className="my-3 flex gap-3 flex-col xl:flex-row">
-        <CountWidget count={1700000} title="Eenzaamheid boven de 65 jaar" />
-        <CountWidget count={396964} title="Ernstig eenzaam boven de 65 jaar" />
-        <CountWidget count={2958765} title="Eenzaamheid tussen de 18-65" />
+        <CountWidget
+          duration={3}
+          count={1700000}
+          title="Eenzaamheid boven de 65 jaar"
+        />
+        <CountWidget
+          duration={5}
+          count={396964}
+          title="Ernstig eenzaam boven de 65 jaar"
+        />
+        <CountWidget
+          duration={3}
+          count={2958765}
+          title="Eenzaamheid tussen de 18-65"
+        />
       </div>
     </main>
   );
