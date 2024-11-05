@@ -11,7 +11,8 @@ const InterestForm = () => {
 
   return (
     <form action={sendInterest} className="grid grid-cols-2 gap-3 w-72">
-      <div className="flex flex-col row-start-1 col-span-full gap">
+      <span className='row-start-1 text-lg col-span-full font-medium'>Wordt op de hoogte gehouden!</span>
+      <div className="flex flex-col row-start-2 col-span-full gap">
         <label htmlFor="name">Naam</label>
         <input
           onChange={(e) => setNameInput(e.target.value)}
@@ -23,7 +24,7 @@ const InterestForm = () => {
         />
       </div>
 
-      <div className="flex flex-col row-start-2 col-span-full gap">
+      <div className="flex flex-col row-start-3 col-span-full gap">
         <label htmlFor="email">Email</label>
         <input
           value={emailInput}
@@ -38,7 +39,7 @@ const InterestForm = () => {
       <button
         disabled={!emailPattern.test(emailInput) || nameInput.length < 1}
         type="submit"
-        className="row-start-3 col-span-full px-3 py-1 rounded bg-blue-500 text-white focus:bg-blue-600 focus:outline-none font-semibold disabled:bg-gray-500 disabled:opacity-50 hover:bg-blue-900 transition-all"
+        className="row-start-4 col-span-full px-3 py-1 rounded bg-blue-500 text-white focus:bg-blue-600 focus:outline-none font-semibold disabled:bg-gray-500 disabled:opacity-50 hover:bg-blue-900 transition-all"
       >
         Aanmelden
       </button>

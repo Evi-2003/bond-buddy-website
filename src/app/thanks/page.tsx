@@ -1,6 +1,7 @@
 import Logo from '../logo.png'
 import Image from 'next/image'
 
+import '@mantine/core/styles.css'
 import CountWidget from '../components/CountWidget'
 
 const SmokeScreen = () => {
